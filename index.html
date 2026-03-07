@@ -905,7 +905,7 @@
             document.getElementById('riepilogoRisparmioTotale').textContent = '€ ' + risparmioCumulativo.toLocaleString('it-IT', {minimumFractionDigits: 2, maximumFractionDigits: 2});
             document.getElementById('riepilogoCostoReale').textContent = '€ ' + costoReale.toLocaleString('it-IT', {minimumFractionDigits: 2, maximumFractionDigits: 2});
             document.getElementById('riepilogoROI').textContent = roiFiscale.toFixed(1) + '%';
-            document.getElementById('riepilogoTesto').innerHTML = `Ogni €100 versati nel fondo pensione costano solo <strong>€${costoPerCento.toFixed(0)}</strong> grazie al beneficio fiscale.`;
+            document.getElementById('riepilogoTesto').innerHTML = `Ogni €100 versati nel fondo pensione costano solo circa <strong>€${costoPerCento.toFixed(0)}</strong> grazie ai benefici fiscali.`;
 
             aggiornaScaglioniChart(imponibileSenza, imponibileCon, scaglioniImpattati);
             aggiornaGraficoETabella(contributo, risparmioAnnuale, anni);
